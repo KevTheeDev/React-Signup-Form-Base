@@ -15,9 +15,9 @@ class controlledCompForm extends React.Component {
   }
   render(){
   return (
-    <div className="App">
+    <div className="reactapp">
       
-     <h1>REACT BASE SIGN UP FORM</h1>
+     <h1 className="title" >REACT BASE SIGN UP FORM</h1>
 
       <form>
         <label>Username</label>

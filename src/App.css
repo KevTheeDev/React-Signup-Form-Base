@@ -1,5 +1,17 @@
 #App{
-  
+
+}
+
+form{
+  font-weight: 550;
+  margin-bottom: .2in;
+}
+
+input{
+  margin-left: .2in;
+  width: 2in;
+  height: .2in;
+  border-radius: 5%;
 }
 
 #title{
