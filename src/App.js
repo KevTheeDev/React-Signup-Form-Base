@@ -1,7 +1,15 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+class controlledCompForm extends React.Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      
+    }
+  }
+  render(){
   return (
     <div className="App">
       <header className="App-header">
@@ -10,5 +18,5 @@ function App() {
     </div>
   );
 }
-
-export default App;
+}
+export default controlledCompForm;
