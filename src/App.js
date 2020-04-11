@@ -17,10 +17,22 @@ class controlledCompForm extends React.Component {
   return (
     <div className="App">
       
-      <form>
+     <h1>Username</h1>
+      <form></form>
 
-      </form>
-    </div>
+     <h1>Password</h1>
+      <form></form>
+
+     <h1>Age</h1>
+      <form></form>
+
+     <h1>Gender</h1>
+      <form></form>
+
+     <h1>Occupation</h1>
+      <form></form>
+
+   </div>
   );
 }
 }
