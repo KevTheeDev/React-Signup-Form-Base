@@ -12,8 +12,14 @@ class controlledCompForm extends React.Component {
       gender: {male: '', female: '', other: ''},
       occupation: ''
     }
+  //bind this to control for the component
+  this.onInput = this.onInput.bind(this);
   }
 
+  onInput(e) {
+    (e.target.name, e.target.name);
+    this.setState({ [e.target.name]: e.target.value })
+  }
 
 
   render(){
@@ -25,33 +31,33 @@ class controlledCompForm extends React.Component {
       <form id="singupboxes">         
         <div>
           <label>Username</label>
-          <input type='text' />
+          <input type='text' name="username" />
         </div>
 
         <div>
           <label>Password</label>
-          <input type='text' />
+          <input type='text' name="password" />
         </div>
 
         <div>
           <label>Age</label>
-          <input type='text' />
+          <input type='text' name="age" />
         </div>
 
 
         <div>
           <label>Gender</label>
-          <input type='text' />
+          <input type='text' name="gender" />
         </div>
 
 
         <div>
           <label>Occupation</label>
-          <input type='text' />
+          <input type='text' name="occupation" />
         </div>
       </form>
 
-    <button>Display</button>
+    <button>Display What You've Entered</button>
 
    </div>
   );
