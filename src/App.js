@@ -13,49 +13,45 @@ class controlledCompForm extends React.Component {
       occupation: ''
     }
   }
+
+
+
   render(){
   return (
     <div className="reactapp">
       
      <h1 className="title" >REACT BASE SIGN UP FORM</h1>
 
-      <div>
-        <form>
+      <form id="singupboxes">         
+        <div>
           <label>Username</label>
           <input type='text' />
-        </form>
-      </div>
-      
-    <div>
-      <form>
-        <label>Password</label>
-        <input type='text' />
-      </form>
-    </div>
-      
-    <div>
-      <form>
-        <label>Age</label>
-        <input type='text' />
-      </form>
-    </div>
-      
-    
-    <div>
-      <form>
-        <label>Gender</label>
-        <input type='text' />
-      </form>
-    </div>
-      
+        </div>
 
-      <div>
-        <form>
-        <label>Occupation</label>
-        <input type='text' />
-        </form>
-      </div>
-      
+        <div>
+          <label>Password</label>
+          <input type='text' />
+        </div>
+
+        <div>
+          <label>Age</label>
+          <input type='text' />
+        </div>
+
+
+        <div>
+          <label>Gender</label>
+          <input type='text' />
+        </div>
+
+
+        <div>
+          <label>Occupation</label>
+          <input type='text' />
+        </div>
+      </form>
+
+    <button>Display</button>
 
    </div>
   );
