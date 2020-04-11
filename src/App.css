@@ -1,5 +1,5 @@
-#App{
-
+body{
+  background-color: rgba(25, 177, 126, 0.555);
 }
 
 form{
@@ -8,10 +8,26 @@ form{
 }
 
 input{
-  margin-left: .2in;
-  width: 2in;
-  height: .2in;
-  border-radius: 5%;
+  /* 1. 
+     width of boxes
+     extra width in boxes
+     margin around the boxes
+     border- outer edges of boxes
+     border rad- rounds the egdes 
+     border box- resizes the box
+     */
+  width: 30%;
+  padding: 12px;
+  margin: 8px;
+  border: 1px solid orange;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+/* 
+  border: 1px solid blue;
+  border-radius: 4px;
+  box-sizing: border-box; */
+
 }
 
 #title{
