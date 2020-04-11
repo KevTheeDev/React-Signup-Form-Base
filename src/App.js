@@ -6,15 +6,20 @@ class controlledCompForm extends React.Component {
     super(props);
 
     this.state = {
-      
+      username: '',
+      password: '',
+      age: '',
+      gender: {male: '', female: '', other: ''},
+      occupation: ''
     }
   }
   render(){
   return (
     <div className="App">
-      <header className="App-header">
+      
+      <form>
 
-      </header>
+      </form>
     </div>
   );
 }
