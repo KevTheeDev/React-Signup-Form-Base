@@ -18,29 +18,30 @@ class controlledCompForm extends React.Component {
     <div className="App">
       
      <h1>REACT BASE SIGN UP FORM</h1>
-     label='Username'
+
       <form>
+        <label>Username</label>
         <input type='text' />
       </form>
 
-     <label>Password</label>
       <form>
-        <input />
+        <label>Password</label>
+        <input type='text' />
       </form>
 
-     <label>Age</label>
       <form>
-        <input />
+        <label>Age</label>
+        <input type='text' />
       </form>
 
-     <label>Gender</label>
       <form>
-        <input />
+        <label>Gender</label>
+        <input type='text' />
       </form>
 
-     <label>Occupation</label>
       <form>
-        <input />
+        <label>Occupation</label>
+        <input type='text' />
       </form>
 
    </div>
