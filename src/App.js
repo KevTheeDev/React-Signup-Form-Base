@@ -17,7 +17,7 @@ class controlledCompForm extends React.Component {
   }
 
   onInput(e) {
-    (e.target.name, e.target.name);
+    // (e.target.name, e.target.value);
     this.setState({ [e.target.name]: e.target.value })
   }
 
@@ -28,7 +28,8 @@ class controlledCompForm extends React.Component {
       
      <h1 className="title" >REACT BASE SIGN UP FORM</h1>
 
-      <form id="singupboxes">         
+      {/* used onchange to call the function that will catch the event that updates the state when text is entered in the input boxes */}
+      <form onChange={this.onInput} >         
         <div>
           <label>Username</label>
           <input type='text' name="username" />
