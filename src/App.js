@@ -22,8 +22,9 @@ onInput(e) {
     this.setState({ [e.target.name]: e.target.value })
   }
 
-  onSubmit(){
+  onSubmit(e){
     console.log(this.state)
+
   }
 
   render(){
@@ -63,7 +64,8 @@ onInput(e) {
         </div>
       </form>
 
-    <button onClick={() => this.onInput()}>  Display What You've Entered</button>
+    {/* added onClick calls this.onInput */}
+    <button onClick={() => this.onSubmit()}>  Display What You've Entered</button>
 
    </div>
   );
