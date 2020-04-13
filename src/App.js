@@ -26,6 +26,7 @@ onInput(e) {
     // 2 .lets us see the values of whats submitted
     // clear after obsubmit use -> this.setState( add empty key value pairs)
     // this.props.onSubmit(this.state) could show the user input in the DOM
+    // this.props.onSubmit(this.state) didn't work at the moment probaly didn't have any props
 
 
     console.log(this.state)
