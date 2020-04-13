@@ -25,8 +25,9 @@ onInput(e) {
   onSubmit(e){
     console.log(this.state)
 
-  }
-
+  } 
+  
+  
   render(){
   return (
     <div className="reactapp">
