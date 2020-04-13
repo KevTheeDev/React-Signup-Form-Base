@@ -22,6 +22,9 @@ onInput(e) {
     this.setState({ [e.target.name]: e.target.value })
   }
 
+  onSubmit(){
+    console.log(this.state)
+  }
 
   render(){
   return (
@@ -38,7 +41,8 @@ onInput(e) {
 
         <div>
           <label>Password</label>
-          <input type='text' name="password" />
+          {/* type passwrod hides the word you enter */}
+          <input type='password' name="password" />
         </div>
 
         <div>
@@ -59,7 +63,7 @@ onInput(e) {
         </div>
       </form>
 
-    <button onSubmit={this.onInput}> {this.state.username} Display What You've Entered</button>
+    <button onClick={() => this.onInput()}>  Display What You've Entered</button>
 
    </div>
   );
