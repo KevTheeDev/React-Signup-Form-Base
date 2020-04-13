@@ -16,8 +16,9 @@ class controlledCompForm extends React.Component {
   this.onInput = this.onInput.bind(this);
   }
 
-  onInput(e) {
+onInput(e) {
     // (e.target.name, e.target.value);
+    // I think this updates the states in the console
     this.setState({ [e.target.name]: e.target.value })
   }
 
@@ -58,7 +59,7 @@ class controlledCompForm extends React.Component {
         </div>
       </form>
 
-    <button>Display What You've Entered</button>
+    <button onSubmit={this.onInput}> {this.state.username} Display What You've Entered</button>
 
    </div>
   );
