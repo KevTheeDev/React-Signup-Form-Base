@@ -77,7 +77,7 @@ onInput(e) {
 
     {/* added onClick calls this.onInput */}
     {/* the page doesn't auto refresh so I don't pass an event */}
-    <button className='btn-btn' onClick={() => this.onSubmit()}> {this.onSubmit} Display What You've Entered</button>
+    <button className='btn' onClick={() => this.onSubmit()}> {this.onSubmit} Display What You've Entered</button>
 
    </div>
   );
