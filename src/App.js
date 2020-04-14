@@ -18,7 +18,7 @@ class App extends Component {
     return ( 
       <div>
         {/* //onSubmit=displaBoxIn... shows user input in concole */}
-        {/* inside of ptag will be an empty object and JSON stringify makes it looks "nice" */}
+        {/* 2. inside of ptag will be an empty object and JSON stringify makes it looks "nice" */}
         <ReactForm onSubmit={displayBoxInput => this.onSubmit(displayBoxInput) }/>
           <p id="display-input" > {JSON.stringify(this.state.displayBoxInput, null, 2)}</p>
       </div>
@@ -26,4 +26,4 @@ class App extends Component {
   }
 }
  
-export default App;
+export default App;     
