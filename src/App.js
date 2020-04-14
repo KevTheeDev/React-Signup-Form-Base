@@ -3,16 +3,14 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { 
-
+    onSubmit = displayInput => { 
+      console.log(`What the user just entered: ${displayInput}`)
      }
-  }
+
   render() { 
     return ( 
       <div>
-        <ReactForm />
+        <ReactForm onSubmit={displayInput => this.onSubmit(displayInput) }/>
       </div>
      );
   }
