@@ -24,8 +24,10 @@ onInput(e) {
   onSubmit(e){
     // 2 .lets us see the values of whats submitted
     // clear after obsubmit use -> this.setState( add empty key value pairs)
+    // this.props.onSubmit(this.state) --> shows user input in concole
+
     console.log(this.state)
-    // this.props.onSubmit(this.state)
+    this.props.onSubmit(this.state)
     this.setState({
       username: '',
       password: '',

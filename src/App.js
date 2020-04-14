@@ -3,14 +3,15 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-    onSubmit = displayInput => { 
-      console.log(`What the user just entered: ${displayInput}`)
+  //onsubmit shows user input in concole
+    onSubmit = displayBoxInput => { 
+      console.log(`What the user just entered: ${displayBoxInput}`)
      }
 
   render() { 
     return ( 
       <div>
-        <ReactForm onSubmit={displayInput => this.onSubmit(displayInput) }/>
+        <ReactForm onSubmit={displayBoxInput => this.onSubmit(displayBoxInput) }/>
       </div>
      );
   }
