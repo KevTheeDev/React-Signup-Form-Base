@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 class controlledCompForm extends React.Component {
   constructor(props){
@@ -30,7 +29,6 @@ onInput(e) {
 
     console.log(this.state)
     // this.props.onSubmit(this.state)
-    // to clear after submitting
     this.setState({
       username: '',
       password: '',
