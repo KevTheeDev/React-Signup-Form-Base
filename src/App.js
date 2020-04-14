@@ -3,15 +3,23 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-  //onsubmit shows user input in concole
+  state = {
+    displayBoxInput: {}
+  };
+  // onsubmit shows user input in concole
+  // console.log(`What the user just entered: ${displayBoxInput}`) --> what it says
+    // this.setState(`${displayBoxInput}`) - and below renders to page
+
     onSubmit = displayBoxInput => { 
-      console.log(`What the user just entered: ${displayBoxInput}`)
+      this.setState({displayBoxInput})
      }
 
   render() { 
     return ( 
       <div>
+        {/* //onSubmit=displaBoxIn... shows user input in concole */}
         <ReactForm onSubmit={displayBoxInput => this.onSubmit(displayBoxInput) }/>
+          <p id="display-input" > {JSON.stringify(this.state.displayBoxInput, null, 2)}</p>
       </div>
      );
   }

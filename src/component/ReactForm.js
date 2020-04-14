@@ -24,9 +24,8 @@ onInput(e) {
   onSubmit(e){
     // 2 .lets us see the values of whats submitted
     // 2. clear after obsubmit use -> this.setState( add empty key value pairs)
+      // 
     // 2. this.props.onSubmit(this.state) --> shows user input in concole
-
-    console.log(this.state)
     this.props.onSubmit(this.state)
     this.setState({
       username: '',
@@ -54,7 +53,7 @@ onInput(e) {
 
         <div>
           <label>Password</label>
-          {/* type passwrod hides the word you enter */}
+          {/* 3. type passwrod hides the word you enter */}
           <input type='password' name="password" />
         </div>
 
@@ -78,7 +77,7 @@ onInput(e) {
 
     {/* added onClick calls this.onInput */}
     {/* the page doesn't auto refresh so I don't pass an event */}
-    <button className='btn-btn' onClick={() => this.onSubmit()}> {this.onSubmit } Display What You've Entered</button>
+    <button className='btn-btn' onClick={() => this.onSubmit()}> {this.onSubmit} Display What You've Entered</button>
 
    </div>
   );
