@@ -15,7 +15,7 @@ class controlledCompForm extends React.Component {
   this.onInput = this.onInput.bind(this);
   }
 
-onInput(e) {
+  onInput(e) {
     // (e.target.name, e.target.value);
     // I think this updates the states in the console
     this.setState({ [e.target.name]: e.target.value })
